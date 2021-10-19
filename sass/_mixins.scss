@@ -1,0 +1,5 @@
+@mixin flexConfig($dir, $justify) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $dir;
+}

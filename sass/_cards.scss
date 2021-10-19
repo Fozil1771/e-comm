@@ -1,0 +1,117 @@
+// recommendation cards
+.recomendation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+
+    .rec-card {
+        flex: 1 0 30%;
+        padding: 1.5rem;
+        background: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: .4s transform;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #223263;
+        }
+
+        .card-img {
+            img {
+                width: 100%
+            }
+        }
+
+        .card-price {
+            @include flexConfig(row, space-between);
+            align-items: center;
+            font-weight: 700;
+
+            &__sale {
+                font-size: 18px;
+                color: #FB7181;
+
+                .old-price {
+                    text-decoration: line-through;
+                    color: #555 !important;
+                }
+
+
+            }
+
+            &__price {
+                font-size: 1.5rem;
+                color: #40BFFF;
+            }
+
+        }
+    }
+}
+
+// product card 
+
+.card {
+    padding: .5rem;
+    text-align: center;
+    position: relative;
+    transition: .5s transform;
+    border-radius: 0.25rem;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px 0px rgba(233, 211, 211, 1);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(233, 211, 211, 1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(233, 211, 211, 1);
+    }
+
+
+    .badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FF4858;
+        color: #fff;
+        padding: 0.25rem;
+        border: 0.25rem;
+
+    }
+
+    &-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .stars {
+        @include flexConfig(row, center);
+        column-gap: 0.25rem;
+        margin: 0.5rem 0;
+    }
+
+    &-info__price {
+        @include flexConfig(row, space-around);
+        font-size: 18px;
+        font-weight: 700;
+
+        .new-price span {
+            color: #40BFFF;
+        }
+
+        .sale-price {
+            color: #FB7181;
+
+            .old-price {
+                color: #555;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

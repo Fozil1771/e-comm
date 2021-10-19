@@ -1,0 +1,43 @@
+.heading {
+    @include flexConfig(row, space-between);
+    padding-top: 24px;
+
+    &-dropdown,
+    &-links {
+        @include flexConfig(row, space-between);
+        column-gap: 14px;
+        align-items: center;
+    }
+
+    &-dropdown .lang,
+    &-dropdown .currency,
+    &-item {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        cursor: pointer;
+    }
+
+}
+
+.nav {
+    @include flexConfig(row, space-between);
+    align-items: center;
+    width: 100%;
+    margin: 24px 0;
+
+    &-links {
+        @include flexConfig(row, space-between);
+        column-gap: 40px;
+
+        .nav-item a {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #262626;
+        }
+
+        .nav-item .active {
+            color: #40BFFF !important;
+        }
+    }
+}

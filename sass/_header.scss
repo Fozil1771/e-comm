@@ -1,0 +1,20 @@
+.header {
+    width: 100%;
+    position: relative;
+
+    &-img img {
+        width: 100%;
+    }
+
+    &-title {
+        position: absolute;
+        top: 40%;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+
+            color: #fff;
+        }
+    }
+}
