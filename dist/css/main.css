@@ -339,4 +339,16 @@ a {
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
+
+.filter-load {
+  text-align: center;
+  color: #33A0FF;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-load:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */

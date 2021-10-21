@@ -45,4 +45,16 @@
 
         }
     }
+
+    &-load {
+        text-align: center;
+        color: #33A0FF;
+        font-size: 1.25rem;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
