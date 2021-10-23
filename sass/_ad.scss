@@ -1,0 +1,54 @@
+.ad-bg {
+    background: #40BFFF;
+    margin: 5rem 0;
+}
+
+.ad {
+    @include flexConfig(row, space-between);
+    align-items: center;
+
+    &-content {
+        color: #fff;
+
+        &__title {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.75rem;
+        }
+
+        .ad-btn {
+            font-size: 1.25rem;
+            font-weight: 700;
+            border: none;
+            background: transparent;
+            color: #fff;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 70%;
+                height: 2px;
+                background: #fff;
+                bottom: -2px;
+            }
+        }
+
+    }
+
+    &-img {
+        position: relative;
+        top: -40px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -351,4 +351,69 @@ a {
 .filter-load:hover {
   text-decoration: underline;
 }
+
+.ad-bg {
+  background: #40BFFF;
+  margin: 5rem 0;
+}
+
+.ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ad-content {
+  color: #fff;
+}
+
+.ad-content__title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.ad-content__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.ad-content .ad-btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.ad-content .ad-btn::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 2px;
+  background: #fff;
+  bottom: -2px;
+}
+
+.ad-img {
+  position: relative;
+  top: -40px;
+}
+
+.ad-img img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
