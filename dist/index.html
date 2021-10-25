@@ -19,14 +19,7 @@
                     </div>
                 </div>
                 <div class="heading-links">
-                    <div class="heading-item">
-                        <div class="item-icon">
-                            <img src="./assets/icons/profile.svg" alt="profile icon">
-                        </div>
-                        <div class="item-label">
-                            <span>My profile</span>
-                        </div>
-                    </div>
+
                     <div class="heading-item">
                         <div class="item-icon">
                             <img src="./assets/icons/basket.svg" alt="basket icon">
@@ -48,17 +41,19 @@
                 </div>
             </nav>
             <nav class="nav">
-                <div class="nav-logo">
-                    <img src="./assets/icons/logo.svg" alt="E-Comm logo">
-                </div>
-                <ul class="nav-links">
-                    <li class="nav-item"><a href="#" class="active">HOME</a></li>
-                    <li class="nav-item"><a href="#">BAGS</a></li>
-                    <li class="nav-item"><a href="#">SNEAKERS</a></li>
-                    <li class="nav-item"><a href="#">BELT</a></li>
-                    <li class="nav-item"><a href="#">CONTACT</a></li>
+                <div class="nav-logo"><img src="./assets/icons/logo.svg" alt=""></div>
+                <ul class="nav-list" id="nav-menu">
+                    <li class="nav-list__item"><a href="#" class="nav-link active">HOME</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-link">BAGS</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-link">SNEAKERS</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-link">BELT</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-link">CONTACT</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-link">PROFILE</a></li>
                 </ul>
+
+                <div class="nav-mobile" id="nav-burger"><a href="#" id="nav-toggle-btn"><span></span></a></div>
             </nav>
+
         </div>
 
         <header class="header">
@@ -414,7 +409,7 @@
             </div>
         </div>
 
-        <div class="conatiner">
+        <div class="container">
             <div class="features">
                 <div class="feature">
                     <div class="feature-icon">
@@ -451,7 +446,7 @@
             </div>
 
             <div class="news">
-                <div class="news-title">
+                <div class="news-heading">
                     <span>LATEST NEWS</span>
                 </div>
 
@@ -473,13 +468,13 @@
 
                     <div class="news-item">
                         <div class="news-item__img">
-                            <img src="./assets/icons/nike.png" alt="nike">
+                            <img src="./assets/icons/figma-logo.png" alt="figma">
                         </div>
                         <div class="news-item__content">
                             <div class="news-date">
                                 <span>01 Jan, 2015</span>
                             </div>
-                            <h6 class="news-title">Fashion Industry</h6>
+                            <h6 class="news-title">Best Design Tools</h6>
                             <p class="news-text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </p>
@@ -488,13 +483,13 @@
 
                     <div class="news-item">
                         <div class="news-item__img">
-                            <img src="./assets/icons/nike.png" alt="nike">
+                            <img src="./assets/icons/kronos-logo.png" alt="kronos">
                         </div>
                         <div class="news-item__content">
                             <div class="news-date">
                                 <span>01 Jan, 2015</span>
                             </div>
-                            <h6 class="news-title">Fashion Industry</h6>
+                            <h6 class="news-title">HR Community</h6>
                             <p class="news-text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </p>
@@ -503,18 +498,208 @@
                 </div>
             </div>
 
+            <div class="featured">
+                <div class="featured-title">
+                    <span>FEATURED PRODUCTS</span>
+                </div>
+                <div class="featured-products">
+                    <div class="card2">
+                        <div class="card2-img">
+                            <img src="./assets/img/product3.png" alt="product">
+                        </div>
+                        <div class="card2-content">
+                            <h6 class="card2-title">
+                                Blue Swade Nike Sneakers
+                            </h6>
+                            <div class="stars">
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card2-price">
+                                <span class="price">$499</span>
+                                <span class="price-old">$599</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card2-img">
+                            <img src="./assets/img/product3.png" alt="product">
+                        </div>
+                        <div class="card2-content">
+                            <h6 class="card2-title">
+                                Blue Swade Nike Sneakers
+                            </h6>
+                            <div class="stars">
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card2-price">
+                                <span class="price">$499</span>
+                                <span class="price-old">$599</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card2-img">
+                            <img src="./assets/img/product3.png" alt="product">
+                        </div>
+                        <div class="card2-content">
+                            <h6 class="card2-title">
+                                Blue Swade Nike Sneakers
+                            </h6>
+                            <div class="stars">
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card2-price">
+                                <span class="price">$499</span>
+                                <span class="price-old">$599</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card2-img">
+                            <img src="./assets/img/product3.png" alt="product">
+                        </div>
+                        <div class="card2-content">
+                            <h6 class="card2-title">
+                                Blue Swade Nike Sneakers
+                            </h6>
+                            <div class="stars">
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/icons/starfilled.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card2-price">
+                                <span class="price">$499</span>
+                                <span class="price-old">$599</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="search">
                 <div class="search-input">
-                    <input type="text" name="search" id="search">
+                    <input type="text" name="search" id="search" placeholder="Search query...">
                 </div>
-                <button class="btn btn-primary">Search</button>
+                <button class="search-btn btn btn-primary">Search</button>
             </div>
         </div>
     </main>
 
     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <div class="footer-loog footer-item__title">
+                        <img src="./assets/icons/logo.svg" alt="E-Comm">
+                    </div>
+                    <p class="footer-item__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+                </div>
 
+                <div class="footer-item">
+                    <div class="footer-item__title">
+                        <h5>Follow Us</h5>
+                    </div>
+                    <p class="footer-item__text">Since the 1500s, when an unknown printer took a galley of type and
+                        scrambled.</p>
+                    <div class="social-icons">
+                        <div class="footer-icon">
+                            <a href="www.facebook.com" target="_blank">
+                                <img src="./assets/icons/fb.svg" alt="facebook">
+                            </a>
+                        </div>
+
+
+                        <div class="footer-icon">
+                            <a href="www.twitter.com" target="_blank">
+                                <img src="./assets/icons/tw.svg" alt="twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-item__title">
+                        <h5>Contact Us</h5>
+                    </div>
+                    <p class="footer-item__text">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-item__title">
+                        <h5>Infomation</h5>
+                    </div>
+                    <p class="footer-item__text">Since the 1500s, when an unknown printer took a galley of type and
+                        scrambled.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -20,24 +20,137 @@
 
 }
 
+
 .nav {
     @include flexConfig(row, space-between);
+    padding: 30px 0;
     align-items: center;
-    width: 100%;
-    margin: 24px 0;
 
-    &-links {
-        @include flexConfig(row, space-between);
-        column-gap: 40px;
+    .nav-mobile {
+        display: none;
+        position: relative;
+        background: transparent;
+        height: 48px;
+        width: 48px;
+        cursor: pointer;
 
-        .nav-item a {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #262626;
+        @media screen and (max-width: 1170px) {
+            display: block;
         }
 
-        .nav-item .active {
-            color: #40BFFF !important;
+        #nav-toggle-btn {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            cursor: pointer;
         }
+
+        #nav-toggle-btn span,
+        #nav-toggle-btn span::after,
+        #nav-toggle-btn span::before {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 3px;
+            width: 32px;
+            background: #262626;
+            position: absolute;
+            display: block;
+            content: '';
+            transition: all 300ms ease-in-out;
+        }
+
+        #nav-toggle-btn span::before {
+            top: -10px;
+        }
+
+        #nav-toggle-btn span::after {
+            bottom: -10px;
+        }
+
+        #nav-toggle-btn.active span {
+            background-color: transparent;
+        }
+
+        #nav-toggle-btn.active span::before,
+        #nav-toggle-btn.active span::after {
+            top: 0;
+        }
+
+        #nav-toggle-btn.active span:before {
+            transform: rotate(45deg);
+        }
+
+        #nav-toggle-btn.active span:after {
+            transform: rotate(-45deg);
+        }
+
+
+
     }
+
+
+    &-list {
+        @include flexConfig(row, space-between);
+        align-content: center;
+
+        &__item {
+            margin: 0 33px;
+            vertical-align: middle;
+
+            a {
+                color: #262626;
+                font-size: 1.5rem;
+                font-weight: 500;
+                transition: color .3s;
+
+                &:hover {
+                    color: #40BFFF;
+                }
+            }
+
+            .active {
+                color: #40BFFF;
+            }
+        }
+
+        @media screen and (max-width: 1170px) {
+            & {
+
+                position: absolute;
+                // left: 50%;
+                display: none;
+
+                border-radius: 18px;
+                padding-top: 3rem;
+
+
+
+                margin: 0 auto;
+
+
+
+                &__item {
+                    margin: 1.5rem 0;
+                }
+            }
+
+            &.menu-active {
+                @include flexConfig(column, center);
+                top: 90px;
+                margin: 40px auto 0 auto;
+                padding-bottom: 2rem;
+                background: #40BFFF;
+                align-items: center;
+                z-index: 10;
+                width: 90%;
+                animation: dropMenu .3s ease-in-out forwards;
+
+
+            }
+
+
+        }
+
+    }
+
 }

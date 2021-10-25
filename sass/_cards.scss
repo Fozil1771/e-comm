@@ -2,17 +2,24 @@
 .recomendation {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
     top: -100px;
 
+    @media screen and (max-width: 1024px) {
+        top: 0;
+    }
+
     .rec-card {
-        flex: 1 0 30%;
+        flex: 0 1 30%;
         padding: 1.5rem;
         background: #fff;
         border-radius: 6px;
         cursor: pointer;
         transition: .4s transform;
+
+
 
         &:hover {
             transform: scale(1.05);
@@ -53,6 +60,12 @@
             }
 
         }
+
+
+        @media screen and (max-width: 1024px) {
+            flex: 0 1 300px;
+        }
+
     }
 }
 
@@ -90,11 +103,7 @@
         }
     }
 
-    .stars {
-        @include flexConfig(row, center);
-        column-gap: 0.25rem;
-        margin: 0.5rem 0;
-    }
+
 
     &-info__price {
         @include flexConfig(row, space-around);
@@ -114,4 +123,53 @@
             }
         }
     }
+}
+
+.card2 {
+    @include flexConfig(row, flex-start);
+    align-items: center;
+    flex: 0 1 325px;
+    padding: 5px;
+    transition: transform .3s;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+
+    &:hover {
+        transform: scale(1.04);
+        border: 1px solid rgb(129, 129, 129);
+    }
+
+    &-content {
+        .card2-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: .25rem;
+        }
+
+        .stars {
+            margin-bottom: .25rem;
+        }
+
+        .card2-price {
+            text-align: end;
+
+            .price {
+                color: #FF4858;
+                font-weight: 700;
+            }
+
+            .price-old {
+                text-decoration: line-through;
+                color: #555;
+            }
+        }
+    }
+
+}
+
+.stars {
+    @include flexConfig(row, center);
+    column-gap: 0.25rem;
+    margin: 0.5rem 0;
 }

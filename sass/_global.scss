@@ -13,9 +13,21 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    background-color: #40BFFF;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: .5rem 1.25rem;
+    border: none;
+
+}
+
 @import './mixins';
 @import './navbar';
 @import './header';
 @import './cards';
 @import './filterSection';
 @import './ad';
+@import './subfooter';
+@import './footer';

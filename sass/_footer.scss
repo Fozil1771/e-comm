@@ -1,0 +1,27 @@
+.footer {
+    background: #BCDDFE;
+    padding: 3rem 0;
+
+    &-content {
+        @include flexConfig(row, space-between);
+        flex-wrap: wrap;
+        row-gap: 4rem;
+
+        .footer-item {
+            flex: 0 1 320px;
+
+            &__title {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 1.25rem;
+                height: 45px;
+            }
+
+            .social-icons {
+                margin-top: 1rem;
+                @include flexConfig(row, flex-start);
+                column-gap: 1rem;
+            }
+        }
+    }
+}
