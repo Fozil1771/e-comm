@@ -92,6 +92,13 @@
     &-list {
         @include flexConfig(row, space-between);
         align-content: center;
+        position: relative;
+
+
+
+
+
+
 
         &__item {
             margin: 0 33px;
@@ -111,6 +118,44 @@
             .active {
                 color: #40BFFF;
             }
+
+            &:hover~.drop-menu {
+                display: flex;
+            }
+        }
+
+        .drop-menu {
+            display: none;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: 2rem;
+            left: 0;
+            background-color: #fff;
+
+            z-index: 100;
+            padding: 2rem;
+
+            .category {
+                li {
+                    margin-bottom: 1rem;
+
+                    a {
+                        color: #262626;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: #40BFFF;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                display: flex;
+            }
+
+
         }
 
         @media screen and (max-width: 1170px) {
@@ -143,9 +188,17 @@
                 align-items: center;
                 z-index: 10;
                 width: 90%;
-                animation: dropMenu .3s ease-in-out forwards;
+
+                li a:hover {
+                    color: #fff;
+                }
 
 
+            }
+
+            .drop-menu {
+                display: none !important;
+                visibility: hidden;
             }
 
 
