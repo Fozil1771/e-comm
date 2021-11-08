@@ -11,6 +11,74 @@
 
 <body>
 
+    <div class="container">
+        <nav class="heading">
+            <div class="heading-dropdown">
+                <div class="lang"><span>EN</span> <img src="../assets/icons/arrow-down.svg" alt="arrow icon"></div>
+                <div class="currency"><span>USD</span> <img src="../assets/icons/arrow-down.svg" alt="arrow icon">
+                </div>
+            </div>
+            <div class="heading-links">
+
+                <div class="heading-item">
+                    <div class="item-icon">
+                        <img src="../assets/icons/basket.svg" alt="basket icon">
+                    </div>
+                </div>
+                <div class="heading-item">
+                    <div class="item-label">
+                        <span>Items</span>
+                    </div>
+                    <div class="item-label">
+                        <span>$0.00</span>
+                    </div>
+                </div>
+                <div class="heading-item">
+                    <div class="item-icon">
+                        <img src="../assets/icons/search-icon.svg" alt="search icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav">
+            <div class="nav-logo"><img src="../assets/icons/logo.svg" alt=""></div>
+            <ul class="nav-list" id="nav-menu">
+                <li class="nav-list__item"><a href="#" class="nav-link active">HOME</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">BAGS</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">SNEAKERS</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">BELT</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">CONTACT</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">PROFILE</a></li>
+
+                <div class="drop-menu">
+                    <ul class="category">
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                    </ul>
+                    <ul class="category">
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+
+                    </ul>
+                    <ul class="category">
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+
+                    </ul>
+                </div>
+            </ul>
+
+
+
+            <div class="nav-mobile" id="nav-burger"><a href="#" id="nav-toggle-btn"><span></span></a></div>
+        </nav>
+
+    </div>
+
 
     <main>
         <div class="breadcrumb">
@@ -19,33 +87,375 @@
             <span>Hot Deal</span>
         </div>
 
-        <div class="content">
-            <section class="filter">
+        <div class="container">
+            <div class="content">
+                <section class="filter">
+                    <ul class="filter-block">
+                        <li class="filter-name"><span>Hot Deals</span> <span id="close">x</span></li>
+                        <li><span>Nike</span> <span class="num">2</span></li>
+                        <li><span>Adidas</span> <span class="num">6</span></li>
+                        <li class="active"><span>Airmax</span> <span class="num">12</span></li>
+                        <li><span>Nike</span> <span class="num">22</span></li>
+                    </ul>
 
-            </section>
-
-            <section class="products">
-                <div class="ad-bg">
-                    <div class="container">
-                        <div class="ad">
-                            <div class="ad-content">
-                                <h4 class="ad-content__title">Adidas Men Running
-                                    Sneakers</h4>
-                                <p class="ad-content__text">
-                                    Performance and design. Taken right to the edge.
-                                </p>
-                                <button class="ad-btn">SHOP NOW</button>
+                    <div class="filter-block">
+                        <div class="filter-name"><span>Prices</span></div>
+                        <div class="range">
+                            <div class="range-label">
+                                <span>$13.99</span><span>$25.99</span>
                             </div>
-
-                            <div class="ad-img">
-                                <img src="../assets/img/sneaker.png" alt="sneaker big">
-                            </div>
-
+                            <input type="range">
                         </div>
                     </div>
-                </div>
 
-            </section>
+                    <div class="filter-block">
+                        <div class="filter-name"><span>Colors</span></div>
+                        <div class="filter-colors">
+                            <div class="color active"></div>
+                            <div class="color"></div>
+                            <div class="color"></div>
+                            <div class="color"></div>
+                            <div class="color"></div>
+                        </div>
+
+                    </div>
+
+
+
+                    <ul class="filter-block">
+                        <li class="filter-name">Brands</li>
+                        <li><span>Nike</span> <span class="num">2</span></li>
+                        <li><span>Adidas</span> <span class="num">6</span></li>
+                        <li class="active"><span>Airmax</span> <span class="num">12</span></li>
+                        <li><span>Nike</span> <span class="num">22</span></li>
+                    </ul>
+                </section>
+
+                <section class="products">
+                    <div class="ad-bg">
+                        <div class="container">
+                            <div class="ad">
+                                <div class="ad-content">
+                                    <h4 class="ad-content__title">Adidas Men Running
+                                        Sneakers</h4>
+                                    <p class="ad-content__text">
+                                        Performance and design. Taken right to the edge.
+                                    </p>
+                                    <button class="ad-btn">SHOP NOW</button>
+                                </div>
+
+                                <div class="ad-img">
+                                    <img src="../assets/img/sneaker.png" alt="sneaker big">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-label">
+                        <div class="label-item"><span>13 Items</span></div>
+                        <div class="filter-config"><span>Filter</span></div>
+                        <div class="product-view">
+                            <div class="label-item" id="row"><img src="../assets/icons/block.svg" alt=""></div>
+                            <div class="label-item" id="column"><img src="../assets/icons/plitka.svg" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="product-result">
+                        <div class="filter-body" id="filter-body">
+                            <div class="card card-row">
+                                <a href="./product-info.html">
+
+                                    <div class="badge">HOT</div>
+                                    <div class="card-img">
+                                        <img src="../assets/img/product2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-info__title">
+                                            Nike Air Max 270 React
+                                        </h5>
+                                        <div class="stars">
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-info__price">
+                                            <div class="new_price">
+                                                <span>$299,43</span>
+                                            </div>
+                                            <div class="sale-price">
+                                                <span><span class="old-price">$534,33</span>
+                                                    24% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+                                                mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend
+                                                laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                                                ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card card-row">
+                                <a href="./product-info.html">
+
+                                    <div class="card-img">
+                                        <img src="../assets/img/product2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-info__title">
+                                            Nike Air Max 270 React
+                                        </h5>
+                                        <div class="stars">
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-info__price">
+                                            <div class="new_price">
+                                                <span>$299,43</span>
+                                            </div>
+                                            <div class="sale-price">
+                                                <span><span class="old-price">$534,33</span>
+                                                    24% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+                                                mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend
+                                                laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                                                ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card card-row">
+                                <a href="./product-info.html">
+                                    <div class="badge">HOT</div>
+                                    <div class="card-img">
+                                        <img src="../assets/img/product2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-info__title">
+                                            Nike Air Max 270 React
+                                        </h5>
+                                        <div class="stars">
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-info__price">
+                                            <div class="new_price">
+                                                <span>$299,43</span>
+                                            </div>
+                                            <div class="sale-price">
+                                                <span><span class="old-price">$534,33</span>
+                                                    24% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+                                                mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend
+                                                laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                                                ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card card-row">
+                                <a href="./product-info.html">
+
+                                    <div class="card-img">
+                                        <img src="../assets/img/product2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-info__title">
+                                            Nike Air Max 270 React
+                                        </h5>
+                                        <div class="stars">
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-info__price">
+                                            <div class="new_price">
+                                                <span>$299,43</span>
+                                            </div>
+                                            <div class="sale-price">
+                                                <span><span class="old-price">$534,33</span>
+                                                    24% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+                                                mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend
+                                                laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                                                ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card card-row">
+                                <a href="./product-info.html">
+                                    <div class="badge">HOT</div>
+                                    <div class="card-img">
+                                        <img src="../assets/img/product2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-info__title">
+                                            Nike Air Max 270 React
+                                        </h5>
+                                        <div class="stars">
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-info__price">
+                                            <div class="new_price">
+                                                <span>$299,43</span>
+                                            </div>
+                                            <div class="sale-price">
+                                                <span><span class="old-price">$534,33</span>
+                                                    24% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+                                                mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend
+                                                laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                                                ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card card-row">
+                                <a href="./product-info.html">
+                                    <div class="badge">HOT</div>
+                                    <div class="card-img">
+                                        <img src="../assets/img/product2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-info__title">
+                                            Nike Air Max 270 React
+                                        </h5>
+                                        <div class="stars">
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                            <div class="star">
+                                                <img src="../assets/icons/starfilled.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-info__price">
+                                            <div class="new_price">
+                                                <span>$299,43</span>
+                                            </div>
+                                            <div class="sale-price">
+                                                <span><span class="old-price">$534,33</span>
+                                                    24% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+                                                mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend
+                                                laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                                                ...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
         </div>
 
     </main>

@@ -1,0 +1,187 @@
+.content {
+    width: 100%;
+    margin-bottom: 5rem;
+
+    @include flexConfig(row, space-between);
+    align-items: flex-start;
+    column-gap: 5%;
+
+    .filter {
+        width: 25%;
+
+        display: block;
+
+        &-block {
+            margin-bottom: 2rem;
+
+            .filter-name {
+                margin-bottom: 1rem;
+                font-size: 1.25rem;
+                font-weight: 500;
+
+                #close {
+                    display: none;
+                }
+            }
+
+            li {
+                margin-bottom: .5rem;
+                @include flexConfig(row, space-between);
+
+                .num {
+                    color: #8b8b8b;
+                }
+            }
+
+            .active span {
+                color: #33A0FF;
+            }
+
+
+            .range {
+                &-label {
+                    @include flexConfig(row, space-between);
+                }
+
+                input {
+                    cursor: pointer;
+                    width: 100%;
+                }
+            }
+
+            .filter-colors {
+                @include flexConfig(row, space-between);
+                align-items: center;
+                column-gap: 10px;
+
+                .color {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: red;
+                    border-radius: 50%;
+                    position: relative;
+                    cursor: pointer;
+
+                }
+
+                .color.active {
+                    width: 1rem;
+                    height: 1rem;
+                }
+
+                .color.active::after {
+                    border: 2px solid #8b8b8b;
+                    content: "";
+                    position: absolute;
+                    top: -.25rem;
+                    left: -.25rem;
+                    border-radius: 50%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+
+                }
+
+                .color:nth-child(1) {
+                    background-color: #006CFF;
+                }
+
+                .color:nth-child(2) {
+                    background-color: #FC3E39;
+                }
+
+                .color:nth-child(3) {
+                    background-color: #171717;
+                }
+
+                .color:nth-child(4) {
+                    background-color: #FFF600;
+                }
+
+                .color:nth-child(5) {
+                    background-color: #FF00B4;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 768px) {
+
+
+            & {
+                position: fixed;
+                background: #fff;
+                top: 0;
+                left: 0;
+                padding: 1rem;
+                width: 100%;
+                height: 100%;
+                z-index: 1000;
+                display: none;
+
+
+                #close {
+                    display: block !important;
+
+                }
+
+            }
+
+            &.active {
+                display: block;
+                animation: animate .4s ease-out;
+
+            }
+
+
+
+
+        }
+    }
+
+    .products {
+
+
+        &>.ad-bg {
+            width: 100%;
+            margin: 0;
+        }
+
+        &-label {
+            margin: 1.5rem 0;
+            @include flexConfig(row, space-between);
+
+            .product-view {
+                @include flexConfig(row, space-between);
+                column-gap: 1.5rem;
+
+                .label-item {
+                    transition: .3s;
+                    cursor: pointer;
+
+                    &:hover img {
+                        filter: invert(45%) sepia(97%) saturate(769%) hue-rotate(185deg) brightness(102%) contrast(100%);
+                    }
+                }
+            }
+
+            @media screen and (min-width: 769px) {
+                .filter-config {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes animate {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

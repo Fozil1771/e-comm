@@ -71,12 +71,16 @@
 
 // product card 
 
+
+
 .card {
     padding: .5rem;
     text-align: center;
     position: relative;
     transition: .5s transform;
     border-radius: 0.25rem;
+    flex: 0 1 25%;
+
 
     &:hover {
         transform: scale(1.05);
@@ -95,12 +99,6 @@
         padding: 0.25rem;
         border: 0.25rem;
 
-    }
-
-    &-img {
-        img {
-            width: 100%;
-        }
     }
 
 
@@ -123,7 +121,13 @@
             }
         }
     }
+
+    &-info .card-text {
+        display: none;
+        color: #333;
+    }
 }
+
 
 .card2 {
     @include flexConfig(row, flex-start);

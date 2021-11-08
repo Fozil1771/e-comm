@@ -37,6 +37,16 @@ a {
   border: none;
 }
 
+.breadcrumb {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+
+.breadcrumb a {
+  color: #40BFFF;
+}
+
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,6 +280,9 @@ a {
             align-items: center;
     z-index: 10;
     width: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
   .nav-list.menu-active li a:hover {
     color: #fff;
@@ -394,6 +407,9 @@ a {
   -webkit-transition: .5s transform;
   transition: .5s transform;
   border-radius: 0.25rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
 
 .card:hover {
@@ -412,10 +428,6 @@ a {
   color: #fff;
   padding: 0.25rem;
   border: 0.25rem;
-}
-
-.card-img img {
-  width: 100%;
 }
 
 .card-info__price {
@@ -443,6 +455,11 @@ a {
 .card-info__price .sale-price .old-price {
   color: #555;
   text-decoration: line-through;
+}
+
+.card-info .card-text {
+  display: none;
+  color: #333;
 }
 
 .card2 {
@@ -569,12 +586,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.filter-body .card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
 }
 
 .filter-load {
@@ -845,6 +856,243 @@ a {
 .search-btn {
   width: 20%;
   cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+}
+
+.content .filter {
+  width: 25%;
+  display: block;
+}
+
+.content .filter-block {
+  margin-bottom: 2rem;
+}
+
+.content .filter-block .filter-name {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.content .filter-block .filter-name #close {
+  display: none;
+}
+
+.content .filter-block li {
+  margin-bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .filter-block li .num {
+  color: #8b8b8b;
+}
+
+.content .filter-block .active span {
+  color: #33A0FF;
+}
+
+.content .filter-block .range-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .filter-block .range input {
+  cursor: pointer;
+  width: 100%;
+}
+
+.content .filter-block .filter-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.content .filter-block .filter-colors .color {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.content .filter-block .filter-colors .color.active {
+  width: 1rem;
+  height: 1rem;
+}
+
+.content .filter-block .filter-colors .color.active::after {
+  border: 2px solid #8b8b8b;
+  content: "";
+  position: absolute;
+  top: -.25rem;
+  left: -.25rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.content .filter-block .filter-colors .color:nth-child(1) {
+  background-color: #006CFF;
+}
+
+.content .filter-block .filter-colors .color:nth-child(2) {
+  background-color: #FC3E39;
+}
+
+.content .filter-block .filter-colors .color:nth-child(3) {
+  background-color: #171717;
+}
+
+.content .filter-block .filter-colors .color:nth-child(4) {
+  background-color: #FFF600;
+}
+
+.content .filter-block .filter-colors .color:nth-child(5) {
+  background-color: #FF00B4;
+}
+
+@media screen and (max-width: 768px) {
+  .content .filter {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+  }
+  .content .filter #close {
+    display: block !important;
+  }
+  .content .filter.active {
+    display: block;
+    -webkit-animation: animate .4s ease-out;
+            animation: animate .4s ease-out;
+  }
+}
+
+.content .products > .ad-bg {
+  width: 100%;
+  margin: 0;
+}
+
+.content .products-label {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .products-label .product-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.content .products-label .product-view .label-item {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.content .products-label .product-view .label-item:hover img {
+  -webkit-filter: invert(45%) sepia(97%) saturate(769%) hue-rotate(185deg) brightness(102%) contrast(100%);
+          filter: invert(45%) sepia(97%) saturate(769%) hue-rotate(185deg) brightness(102%) contrast(100%);
+}
+
+@media screen and (min-width: 769px) {
+  .content .products-label .filter-config {
+    display: none;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .footer {

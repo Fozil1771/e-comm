@@ -23,6 +23,16 @@ a {
 
 }
 
+.breadcrumb {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+
+    a {
+        color: #40BFFF;
+    }
+}
+
 @import './mixins';
 @import './navbar';
 @import './header';
@@ -30,4 +40,5 @@ a {
 @import './filterSection';
 @import './ad';
 @import './subfooter';
+@import './product-list';
 @import './footer';
