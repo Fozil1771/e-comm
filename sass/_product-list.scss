@@ -14,15 +14,7 @@
         &-block {
             margin-bottom: 2rem;
 
-            .filter-name {
-                margin-bottom: 1rem;
-                font-size: 1.25rem;
-                font-weight: 500;
 
-                #close {
-                    display: none;
-                }
-            }
 
             li {
                 margin-bottom: .5rem;
@@ -49,58 +41,7 @@
                 }
             }
 
-            .filter-colors {
-                @include flexConfig(row, space-between);
-                align-items: center;
-                column-gap: 10px;
 
-                .color {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    background-color: red;
-                    border-radius: 50%;
-                    position: relative;
-                    cursor: pointer;
-
-                }
-
-                .color.active {
-                    width: 1rem;
-                    height: 1rem;
-                }
-
-                .color.active::after {
-                    border: 2px solid #8b8b8b;
-                    content: "";
-                    position: absolute;
-                    top: -.25rem;
-                    left: -.25rem;
-                    border-radius: 50%;
-                    width: 1.5rem;
-                    height: 1.5rem;
-
-                }
-
-                .color:nth-child(1) {
-                    background-color: #006CFF;
-                }
-
-                .color:nth-child(2) {
-                    background-color: #FC3E39;
-                }
-
-                .color:nth-child(3) {
-                    background-color: #171717;
-                }
-
-                .color:nth-child(4) {
-                    background-color: #FFF600;
-                }
-
-                .color:nth-child(5) {
-                    background-color: #FF00B4;
-                }
-            }
         }
 
 
@@ -183,5 +124,69 @@
     100% {
         display: block;
         opacity: 1;
+    }
+}
+
+
+.filter-name {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    #close {
+        display: none;
+    }
+}
+
+.filter-colors {
+    @include flexConfig(row, space-between);
+    align-items: center;
+    column-gap: 10px;
+
+    .color {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: red;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    .color.active {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .color.active::after {
+        border: 2px solid #8b8b8b;
+        content: "";
+        position: absolute;
+        top: -.25rem;
+        left: -.25rem;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+
+    }
+
+    .color:nth-child(1) {
+        background-color: #006CFF;
+    }
+
+    .color:nth-child(2) {
+        background-color: #FC3E39;
+    }
+
+    .color:nth-child(3) {
+        background-color: #171717;
+    }
+
+    .color:nth-child(4) {
+        background-color: #FFF600;
+    }
+
+    .color:nth-child(5) {
+        background-color: #FF00B4;
     }
 }
