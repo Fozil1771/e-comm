@@ -11,6 +11,8 @@ let filterConfig = document.querySelector(".filter-config")
 let filterClose = document.getElementById("close")
 let filterBody = document.querySelector(".filter")
 
+
+
 // navigation drop-down burger logic
 navBarToggle.addEventListener("click", function () {
     navMenu.classList.toggle('menu-active')
@@ -34,3 +36,5 @@ filterConfig.addEventListener('click', () => {
 filterClose.addEventListener('click', () => {
     filterBody.classList.remove("active")
 })
+
+
