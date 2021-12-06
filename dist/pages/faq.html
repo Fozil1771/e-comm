@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comm</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <style>
+        .course-accordion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 2rem;
+
+        }
+
+        .accordion-x {
+            border: none;
+            background: transparent;
+            position: relative;
+
+
+        }
+
+        .accordion-x::after {
+            content: '\002B';
+            color: #333;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        button.course-accordion:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        /* minus button */
+        .course-accordion.active .accordion-x:after {
+            content: "\2212";
+        }
+
+        div.course-panel {
+            padding: 0 18px;
+            background-color: transparent;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            width: 96%;
+            font-family: "Raleway";
+            font-size: 15px;
+            line-height: 1.6em;
+            letter-spacing: .4px;
+            font-weight: 400;
+            font-style: normal;
+            color: rgba(0, 0, 0, .88);
+        }
+
+
+        .full-height {
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="heading">
+            <div class="heading-dropdown">
+                <div class="lang"><span>EN</span> <img src="../assets/icons/arrow-down.svg" alt="arrow icon"></div>
+                <div class="currency"><span>USD</span> <img src="../assets/icons/arrow-down.svg" alt="arrow icon">
+                </div>
+            </div>
+            <div class="heading-links">
+
+                <div class="heading-item">
+                    <div class="item-icon">
+                        <img src="../assets/icons/basket.svg" alt="basket icon">
+                    </div>
+                </div>
+                <div class="heading-item">
+                    <div class="item-label">
+                        <span>Items</span>
+                    </div>
+                    <div class="item-label">
+                        <span>$0.00</span>
+                    </div>
+                </div>
+                <div class="heading-item">
+                    <div class="item-icon">
+                        <img src="../assets/icons/search-icon.svg" alt="search icon">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav">
+            <div class="nav-logo"><img src="../assets/icons/logo.svg" alt=""></div>
+            <ul class="nav-list" id="nav-menu">
+                <li class="nav-list__item"><a href="../index.html" class="nav-link active">HOME</a></li>
+                <li class="nav-list__item drop-label"><a href="./product-list.html" class="nav-link">BAGS</a></li>
+                <li class="nav-list__item drop-label"><a href="./product-list.html" class="nav-link">SNEAKERS</a></li>
+                <li class="nav-list__item"><a href="../index.html#feature" class="nav-link">FEATURE</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">CONTACT</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-link">PROFILE</a></li>
+
+                <div class="drop-menu">
+                    <ul class="category">
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                    </ul>
+                    <ul class="category">
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+
+                    </ul>
+                    <ul class="category">
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+                        <li><a href="./product-list.html">Coporate Shoes </a></li>
+
+                    </ul>
+                </div>
+            </ul>
+
+
+
+            <div class="nav-mobile" id="nav-burger"><a href="#" id="nav-toggle-btn"><span></span></a></div>
+        </nav>
+
+    </div>
+
+
+
+
+    <div class="container">
+        <section class="full-height">
+
+            <div class="course-accordion">
+                <h5>First</h5>
+                <button class="accordion-x"></button>
+            </div>
+            <!-- This div holds the content to be displayed-->
+            <div class="course-panel">
+                <p>
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content
+                </p>
+            </div>
+
+
+            <div class="course-accordion">
+                <h5>Second</h5>
+                <button class="accordion-x"></button>
+            </div>
+            <div class="course-panel">
+                <p>
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content
+                    <br><br>
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content
+                </p>
+            </div>
+
+
+            <div class="course-accordion">
+                <h5>Third</h5>
+                <button class="accordion-x"></button>
+            </div>
+            <div class="course-panel">
+                <p>
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content
+
+                </p>
+            </div>
+
+            <div class="course-accordion">
+                <h5>Fourth</h5>
+                <button class="accordion-x"></button>
+            </div>
+            <div class="course-panel">
+                <p>
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content
+                    <br><br>
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content - Content - Content - Content - Content -
+                    Content - Content - Content - Content - Content - Content
+                </p>
+            </div>
+
+
+
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <div class="footer-loog footer-item__title">
+                        <img src="../assets/icons/logo.svg" alt="E-Comm">
+                    </div>
+                    <p class="footer-item__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-item__title">
+                        <h5>Follow Us</h5>
+                    </div>
+                    <p class="footer-item__text">Since the 1500s, when an unknown printer took a galley of type and
+                        scrambled.</p>
+                    <div class="social-icons">
+                        <div class="footer-icon">
+                            <a href="www.facebook.com" target="_blank">
+                                <img src="../assets/icons/fb.svg" alt="facebook">
+                            </a>
+                        </div>
+
+
+                        <div class="footer-icon">
+                            <a href="www.twitter.com" target="_blank">
+                                <img src="../assets/icons/tw.svg" alt="twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-item__title">
+                        <h5>Contact Us</h5>
+                    </div>
+                    <p class="footer-item__text">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+                </div>
+
+                <div class="footer-item">
+                    <div class="footer-item__title">
+                        <h5>Infomation</h5>
+                    </div>
+                    <p class="footer-item__text">Since the 1500s, when an unknown printer took a galley of type and
+                        scrambled.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/accordion.js"></script>
+</body>
+
+</html>

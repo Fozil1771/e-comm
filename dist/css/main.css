@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -45,6 +49,12 @@ a {
 
 .breadcrumb a {
   color: #40BFFF;
+}
+
+.uni-req {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
 }
 
 .heading {
@@ -210,7 +220,7 @@ a {
   color: #40BFFF;
 }
 
-.nav-list__item:hover ~ .drop-menu {
+.nav-list__item.drop-label:hover ~ .drop-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,6 +236,7 @@ a {
   top: 2rem;
   left: 0;
   background-color: #fff;
+  border: 1px solid #eee5e5;
   z-index: 100;
   padding: 2rem;
 }
