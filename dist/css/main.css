@@ -57,6 +57,11 @@ a {
   font-weight: 300;
 }
 
+#close {
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,7 +302,7 @@ a {
             transform: translate(-50%, 0%);
   }
   .nav-list.menu-active li a:hover {
-    color: #fff;
+    color: #40BFFF;
   }
   .nav-list .drop-menu {
     display: none !important;

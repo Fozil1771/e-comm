@@ -6,9 +6,13 @@ const tabContents = document.querySelectorAll('[data-tab-content]')
 
 // tabs logic
 
+// iterating through tab items 
 tabs.forEach(tab => {
+    // adding click event
     tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.tabTarget)
+
+        // switching active class 
         tabContents.forEach(tabContent => {
             tabContent.classList.remove('active')
         })

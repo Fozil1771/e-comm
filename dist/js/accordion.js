@@ -1,15 +1,15 @@
 //this is the button
-var acc = document.getElementsByClassName("course-accordion");
-var i;
+let acc = document.getElementsByClassName("course-accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
     //when one of the buttons are clicked run this function
     acc[i].onclick = function () {
         //variables
-        var panel = this.nextElementSibling;
-        var coursePanel = document.getElementsByClassName("course-panel");
-        var courseAccordion = document.getElementsByClassName("course-accordion");
-        var courseAccordionActive = document.getElementsByClassName("course-accordion active");
+        let panel = this.nextElementSibling;
+        let coursePanel = document.getElementsByClassName("course-panel");
+        let courseAccordion = document.getElementsByClassName("course-accordion");
+        let courseAccordionActive = document.getElementsByClassName("course-accordion active");
 
         /*if pannel is already open - minimize*/
         if (panel.style.maxHeight) {
@@ -19,13 +19,13 @@ for (i = 0; i < acc.length; i++) {
             this.classList.remove("active");
         } else { //pannel isnt open...
             //goes through the buttons and removes the 'active' css (+ and -)
-            for (var ii = 0; ii < courseAccordionActive.length; ii++) {
-                courseAccordionActive[ii].classList.remove("active");
+            for (var k = 0; k < courseAccordionActive.length; k++) {
+                courseAccordionActive[k].classList.remove("active");
             }
-            //Goes through and removes 'activ' from the css, also minifies any 'panels' that might be open
-            for (var iii = 0; iii < coursePanel.length; iii++) {
+            //Goes through and removes 'active' from the css, also minifies any 'panels' that might be open
+            for (var j = 0; j < coursePanel.length; j++) {
                 this.classList.remove("active");
-                coursePanel[iii].style.maxHeight = null;
+                coursePanel[j].style.maxHeight = null;
             }
             //opens the specified pannel
             panel.style.maxHeight = panel.scrollHeight + "px";

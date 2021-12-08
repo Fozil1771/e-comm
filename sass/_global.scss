@@ -39,6 +39,11 @@ a {
     font-weight: 300;
 }
 
+#close {
+    font-weight: 700;
+    cursor: pointer;
+}
+
 @import './mixins';
 @import './navbar';
 @import './header';
