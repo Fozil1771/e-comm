@@ -16,3 +16,6 @@ and none of libraries involved. It is type of ecommerce website with only visual
 In addition, it was hosted to netlify
 [E-comm netlify](https://e-comm-web.netlify.app/)
 
+
+#### Developed by student(14973) of Wiut
+
