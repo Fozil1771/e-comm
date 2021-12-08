@@ -15,6 +15,10 @@
         margin-bottom: 2rem;
         @include flexConfig(row, center);
         column-gap: 1.5rem;
+        position: relative;
+        overflow-x: scroll;
+        width: 100%;
+        display: -webkit-box;
 
 
 

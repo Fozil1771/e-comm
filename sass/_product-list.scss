@@ -105,6 +105,20 @@
                 }
             }
 
+            .filter-config {
+                border: 1px solid #006CFF;
+                border-radius: 6px;
+                padding: .2rem .4rem;
+                transition: .3s;
+                cursor: pointer;
+                color: #006CFF;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #006CFF;
+                }
+            }
+
             @media screen and (min-width: 769px) {
                 .filter-config {
                     display: none;

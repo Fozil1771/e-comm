@@ -1,6 +1,11 @@
 .footer {
     background: #BCDDFE;
     padding: 3rem 0;
+    height: 70vh;
+
+    @media screen and (max-width: 1024px) {
+        height: 100%;
+    }
 
     &-content {
         @include flexConfig(row, space-between);
